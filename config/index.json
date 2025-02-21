@@ -1,0 +1,139 @@
+{
+  "text2": {
+  "text": "Latest Products",
+  "products": [
+    {
+      "name": "Ring",
+      "price": "$200",
+      "photo": "images/p1.png"
+    },
+    {
+      "name": "Watch",
+      "price": "$300",
+      "photo": "images/p2.png"
+    },
+    {
+      "name": "Teddy Bear",
+      "price": "$110",
+      "photo": "images/p3.png"
+    },
+    {
+      "name": "Flower Bouquet",
+      "price": "$45",
+      "photo": "images/p4.png"
+    },
+    {
+      "name": "Teddy Bear",
+      "price": "$95",
+      "photo": "images/p5.png"
+    },
+    {
+      "name": "Flower Bouquet",
+      "price": "$70",
+      "photo": "images/p6.png"
+    },
+    {
+      "name": "Watch",
+      "price": "$400",
+      "photo": "images/p7.png"
+    },
+    {
+      "name": "Ring",
+      "price": "$450",
+      "photo": "images/p8.png"
+    }
+  ]
+},
+"brand": "Giftos",
+"menu": [
+  { "name": "Home", "link": "index" },
+  { "name": "Shop", "link": "shop" },
+  { "name": "Why Us", "link": "why" },
+  { "name": "Testimonial", "link": "testimonial" },
+  { "name": "Contact Us", "link": "contact" }
+],
+"slider": [
+  {
+    "title": "Welcome To Our Gift Shop",
+    "description": "Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.",
+    "image": "images/slider-img.png",
+    "link": "/contact"
+  },
+  {
+    "title": "Best Gifts Collection For You",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis ipsum id magna dapibus, non ornare metus porttitor.",
+    "image": "images/slider-img.png",
+    "link": "/contact"
+  }
+],
+  "texts": {
+      "aboutus": "About Us",
+      "loremtxt1": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,",
+      "newsletter": "Newsletter",
+      "needhelp": "NEED HELP",
+      "loremtxt2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,",
+      "contactus": "CONTACT US",
+      "location": " Gb road 123 london Uk",
+      "phone": "+01 12345678901",
+      "email": "demo@gmail.com"
+
+  },
+  "footer": {
+    "copy": "All Rights Reserved By",
+    "linkt": "Free Html Templates",
+    "linku": "https://html.design/"
+  },
+  "saving_section": {
+    "title": "Best Savings on new arrivals",
+    "description": "Qui ex dolore at repellat, quia neque doloribus omnis adipisci, ipsum eos odio fugit ut eveniet blanditiis praesentium totam non nostrum dignissimos nihil eius facere et eaque.",
+    "image": "images/saving-img.png",
+    "buttons": [
+      { "text": "Buy Now", "link": "/shop", "class": "btn1" },
+      { "text": "See More", "link": "/why", "class": "btn2" }
+    ]
+  },
+  "texts2": {
+    "text1": "Fast Delivery",
+    "description1": "We ensure quick and safe delivery for all orders.",
+    "text2": "Best Quality",
+    "description2": "We provide the best quality products with guaranteed satisfaction.",
+    "text3": "24/7 Support",
+    "description3": "Our support team is available 24/7 to assist you."
+},
+"gift_section": {
+  "title": "Gifts for your loved ones",
+  "description": "Omnis ex nam laudantium odit illum harum, excepturi accusamus at corrupti, velit blanditiis unde perspiciatis, vitae minus culpa? Beatae at aut consequuntur porro adipisci aliquam eaque iste ducimus expedita accusantium?",
+  "image": "images/gifts.png",
+  "buttons": [
+    { "text": "Buy Now", "link": "/shop", "class": "btn1" },
+    { "text": "See More", "link": "/why", "class": "btn2" }
+  ]
+},"contact": {
+      "title": "Contact Us",
+      "mapu": "https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Niger",
+      "fields": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "message": "message"
+      }
+    },
+    "title": "Testimonial",
+    "reviews": [
+      {
+        "name": "Morijorch",
+        "designation": "Default model text",
+        "message": "Editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various editors now use Lorem Ipsum as their default model text."
+      },
+      {
+        "name": "Rochak",
+        "designation": "Default model text",
+        "message": "Various editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Editors now use Lorem Ipsum as their default model text."
+      },
+      {
+        "name": "Brad Johns",
+        "designation": "Default model text",
+        "message": "Various editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various editors now use Lorem Ipsum as their default model text."
+      }
+    ]
+}

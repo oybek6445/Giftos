@@ -1,0 +1,40 @@
+{
+    "sitetitle": "Giftos",
+    "navbar": [
+      { "name": "Home", "link": "index"},
+      { "name": "Shop", "link": "shop"},
+      { "name": "Why Us", "link": "why"},
+      { "name": "Testimonial", "link": "testimonial"},
+      { "name": "Contact Us", "link": "contact"}
+    ],
+    "contact": {
+      "title": "Contact Us",
+      "mapu": "https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Niger",
+      "fields": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "message": "message"
+      }
+    },
+    "texts": {
+        "aboutus": "About Us",
+        "loremtxt1": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,",
+        "newsletter": "Newsletter",
+        "needhelp": "NEED HELP",
+        "loremtxt2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,",
+        "contactus": "CONTACT US",
+        "location": " Gb road 123 london Uk",
+        "phone": "+01 12345678901",
+        "email": "demo@gmail.com"
+
+    },
+    "footer": {
+      "copy": "All Rights Reserved By",
+      "linkt": "Free Html Templates",
+      "linku": "https://html.design/"
+    }
+  }
+
+  
+  

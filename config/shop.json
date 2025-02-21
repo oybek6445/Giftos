@@ -1,0 +1,72 @@
+{
+    "text2": {
+    "text": "Latest Products",
+    "products": [
+      {
+        "name": "Ring",
+        "price": "$200",
+        "photo": "images/p1.png"
+      },
+      {
+        "name": "Watch",
+        "price": "$300",
+        "photo": "images/p2.png"
+      },
+      {
+        "name": "Teddy Bear",
+        "price": "$110",
+        "photo": "images/p3.png"
+      },
+      {
+        "name": "Flower Bouquet",
+        "price": "$45",
+        "photo": "images/p4.png"
+      },
+      {
+        "name": "Teddy Bear",
+        "price": "$95",
+        "photo": "images/p5.png"
+      },
+      {
+        "name": "Flower Bouquet",
+        "price": "$70",
+        "photo": "images/p6.png"
+      },
+      {
+        "name": "Watch",
+        "price": "$400",
+        "photo": "images/p7.png"
+      },
+      {
+        "name": "Ring",
+        "price": "$450",
+        "photo": "images/p8.png"
+      }
+    ]
+  },
+    "sitetitle": "Giftos",
+    "navbar": [
+      { "name": "Home", "link": "index"},
+      { "name": "Shop", "link": "shop"},
+      { "name": "Why Us", "link": "why"},
+      { "name": "Testimonial", "link": "testimonial"},
+      { "name": "Contact Us", "link": "contact"}
+    ],
+    "texts": {
+        "aboutus": "About Us",
+        "loremtxt1": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,",
+        "newsletter": "Newsletter",
+        "needhelp": "NEED HELP",
+        "loremtxt2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,",
+        "contactus": "CONTACT US",
+        "location": " Gb road 123 london Uk",
+        "phone": "+01 12345678901",
+        "email": "demo@gmail.com"
+
+    },
+    "footer": {
+      "copy": "All Rights Reserved By",
+      "linkt": "Free Html Templates",
+      "linku": "https://html.design/"
+    }
+}

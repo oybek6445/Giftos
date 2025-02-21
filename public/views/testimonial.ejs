@@ -42,42 +42,29 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class=""></span>
         </button>
-
         <div class="collapse navbar-collapse innerpage_navbar" id="navbarSupportedContent">
-          <ul class="navbar-nav  ">
-            <li class="nav-item ">
-              <a class="nav-link" href="index">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="shop">
-                Shop
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="why">
-                Why Us
-              </a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="testimonial">
-                Testimonial
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact">Contact Us</a>
-            </li>
+          <ul class="navbar-nav">
+            <% navbar.forEach(ele => { %> 
+              <li class="nav-item <%= ele.active ? 'active' : '' %>">
+                <a class="nav-link" href="<%= ele.link %>">
+                  <%= ele.name %>
+                  <% if (ele.active) { %> 
+                    <span class="sr-only">(current)</span>
+                  <% } %>
+                </a>
+              </li>
+            <% }) %>
           </ul>
+        
           <div class="user_option">
             <a href="">
               <i class="fa fa-user" aria-hidden="true"></i>
-              <span>
-                Login
-              </span>
+              <span>Login</span>
             </a>
             <a href="">
               <i class="fa fa-shopping-bag" aria-hidden="true"></i>
             </a>
-            <form class="form-inline ">
+            <form class="form-inline">
               <button class="btn nav_search-btn" type="submit">
                 <i class="fa fa-search" aria-hidden="true"></i>
               </button>
@@ -94,83 +81,41 @@
   <!-- client section -->
   <section class="client_section layout_padding">
     <div class="container">
-      <div class="heading_container heading_center">
-        <h2>
-          Testimonial
-        </h2>
-      </div>
+        <div class="heading_container heading_center">
+            <h2><%= title %></h2>
+        </div>
     </div>
     <div class="container px-0">
-      <div id="customCarousel2" class="carousel  carousel-fade" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="box">
-              <div class="client_info">
-                <div class="client_name">
-                  <h5>
-                    Morijorch
-                  </h5>
-                  <h6>
-                    Default model text
-                  </h6>
-                </div>
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
-              </div>
-              <p>
-                editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
-              </p>
+        <div id="customCarousel2" class="carousel carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <% reviews.forEach(function(review, index) { %>
+                    <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
+                        <div class="box">
+                            <div class="client_info">
+                                <div class="client_name">
+                                    <h5><%= review.name %></h5>
+                                    <h6><%= review.designation %></h6>
+                                </div>
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            </div>
+                            <p><%= review.message %></p>
+                        </div>
+                    </div>
+                <% }); %>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="box">
-              <div class="client_info">
-                <div class="client_name">
-                  <h5>
-                    Rochak
-                  </h5>
-                  <h6>
-                    Default model text
-                  </h6>
-                </div>
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
-              </div>
-              <p>
-                Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
-              </p>
+            <div class="carousel_btn-box">
+                <a class="carousel-control-prev" href="#customCarousel2" role="button" data-slide="prev">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#customCarousel2" role="button" data-slide="next">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="box">
-              <div class="client_info">
-                <div class="client_name">
-                  <h5>
-                    Brad Johns
-                  </h5>
-                  <h6>
-                    Default model text
-                  </h6>
-                </div>
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
-              </div>
-              <p>
-                Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy, editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
-              </p>
-            </div>
-          </div>
         </div>
-        <div class="carousel_btn-box">
-          <a class="carousel-control-prev" href="#customCarousel2" role="button" data-slide="prev">
-            <i class="fa fa-angle-left" aria-hidden="true"></i>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#customCarousel2" role="button" data-slide="next">
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
     </div>
-  </section>
+</section>
   <!-- end client section -->
 
   <!-- info section -->
@@ -197,16 +142,16 @@
         <div class="row">
           <div class="col-md-6 col-lg-3">
             <h6>
-              ABOUT US
+              <%=texts.aboutus%>
             </h6>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
+             <%=texts.loremtxt1%>
             </p>
           </div>
           <div class="col-md-6 col-lg-3">
             <div class="info_form ">
               <h5>
-                Newsletter
+                <%=texts.newsletter%>
               </h5>
               <form action="#">
                 <input type="email" placeholder="Enter your email">
@@ -218,28 +163,28 @@
           </div>
           <div class="col-md-6 col-lg-3">
             <h6>
-              NEED HELP
+             <%=texts.needhelp%>
             </h6>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
+              <%=texts.loremtxt2%>
             </p>
           </div>
           <div class="col-md-6 col-lg-3">
             <h6>
-              CONTACT US
+              <%=texts.contactus%>
             </h6>
             <div class="info_link-box">
               <a href="">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span> Gb road 123 london Uk </span>
+                <span> <%=texts.location%> </span>
               </a>
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>+01 12345678901</span>
+                <span><%=texts.phone%></span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span> demo@gmail.com</span>
+                <span><%=texts.email%></span>
               </a>
             </div>
           </div>
@@ -250,8 +195,8 @@
     <footer class=" footer_section">
       <div class="container">
         <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates</a>
+          &copy; <span id="displayYear"></span> <%= footer.copy%>
+          <a href="<%=footer.linku%>"><%=footer.linkt%></a>
         </p>
       </div>
     </footer>

@@ -42,42 +42,29 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class=""></span>
         </button>
-
         <div class="collapse navbar-collapse innerpage_navbar" id="navbarSupportedContent">
-          <ul class="navbar-nav  ">
-            <li class="nav-item ">
-              <a class="nav-link" href="index">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="shop">
-                Shop
-              </a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="why">
-                Why Us
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="testimonial">
-                Testimonial
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact">Contact Us</a>
-            </li>
+          <ul class="navbar-nav">
+            <% navbar.forEach(ele => { %> 
+              <li class="nav-item <%= ele.active ? 'active' : '' %>">
+                <a class="nav-link" href="<%= ele.link %>">
+                  <%= ele.name %>
+                  <% if (ele.active) { %> 
+                    <span class="sr-only">(current)</span>
+                  <% } %>
+                </a>
+              </li>
+            <% }) %>
           </ul>
+        
           <div class="user_option">
             <a href="">
               <i class="fa fa-user" aria-hidden="true"></i>
-              <span>
-                Login
-              </span>
+              <span>Login</span>
             </a>
             <a href="">
               <i class="fa fa-shopping-bag" aria-hidden="true"></i>
             </a>
-            <form class="form-inline ">
+            <form class="form-inline">
               <button class="btn nav_search-btn" type="submit">
                 <i class="fa fa-search" aria-hidden="true"></i>
               </button>
@@ -192,10 +179,10 @@
             </div>
             <div class="detail-box">
               <h5>
-                Fast Delivery
+                <%=texts2.text1%>
               </h5>
               <p>
-                variations of passages of Lorem Ipsum available
+                <%=texts2.description1%>
               </p>
             </div>
           </div>
@@ -307,10 +294,10 @@
             </div>
             <div class="detail-box">
               <h5>
-                Free Shiping
+                <%=texts2.text2%>
               </h5>
               <p>
-                variations of passages of Lorem Ipsum available
+                <%=texts2.description2%>
               </p>
             </div>
           </div>
@@ -328,10 +315,10 @@
             </div>
             <div class="detail-box">
               <h5>
-                Best Quality
+                <%=texts2.text3%>
               </h5>
               <p>
-                variations of passages of Lorem Ipsum available
+                <%=texts2.description3%>
               </p>
             </div>
           </div>
@@ -339,6 +326,7 @@
       </div>
     </div>
   </section>
+
 
   <!-- end why section -->
 
@@ -366,16 +354,16 @@
         <div class="row">
           <div class="col-md-6 col-lg-3">
             <h6>
-              ABOUT US
+              <%=texts.aboutus%>
             </h6>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
+             <%=texts.loremtxt1%>
             </p>
           </div>
           <div class="col-md-6 col-lg-3">
             <div class="info_form ">
               <h5>
-                Newsletter
+                <%=texts.newsletter%>
               </h5>
               <form action="#">
                 <input type="email" placeholder="Enter your email">
@@ -387,28 +375,28 @@
           </div>
           <div class="col-md-6 col-lg-3">
             <h6>
-              NEED HELP
+             <%=texts.needhelp%>
             </h6>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
+              <%=texts.loremtxt2%>
             </p>
           </div>
           <div class="col-md-6 col-lg-3">
             <h6>
-              CONTACT US
+              <%=texts.contactus%>
             </h6>
             <div class="info_link-box">
               <a href="">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span> Gb road 123 london Uk </span>
+                <span> <%=texts.location%> </span>
               </a>
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>+01 12345678901</span>
+                <span><%=texts.phone%></span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span> demo@gmail.com</span>
+                <span><%=texts.email%></span>
               </a>
             </div>
           </div>
@@ -419,16 +407,14 @@
     <footer class=" footer_section">
       <div class="container">
         <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates</a>
+          &copy; <span id="displayYear"></span> <%= footer.copy%>
+          <a href="<%=footer.linku%>"><%=footer.linkt%></a>
         </p>
       </div>
     </footer>
     <!-- footer section -->
 
   </section>
-
-  <!-- end info section -->
 
 
   <script src="js/jquery-3.4.1.min.js"></script>

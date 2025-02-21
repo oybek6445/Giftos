@@ -1,0 +1,46 @@
+{
+    "title": "Testimonial",
+    "reviews": [
+      {
+        "name": "Morijorch",
+        "designation": "Default model text",
+        "message": "Editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various editors now use Lorem Ipsum as their default model text."
+      },
+      {
+        "name": "Rochak",
+        "designation": "Default model text",
+        "message": "Various editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Editors now use Lorem Ipsum as their default model text."
+      },
+      {
+        "name": "Brad Johns",
+        "designation": "Default model text",
+        "message": "Various editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various editors now use Lorem Ipsum as their default model text."
+      }
+    ],
+    "sitetitle": "Giftos",
+    "navbar": [
+      { "name": "Home", "link": "index"},
+      { "name": "Shop", "link": "shop"},
+      { "name": "Why Us", "link": "why"},
+      { "name": "Testimonial", "link": "testimonial"},
+      { "name": "Contact Us", "link": "contact"}
+    ],
+
+    "texts": {
+        "aboutus": "About Us",
+        "loremtxt1": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,",
+        "newsletter": "Newsletter",
+        "needhelp": "NEED HELP",
+        "loremtxt2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,",
+        "contactus": "CONTACT US",
+        "location": " Gb road 123 london Uk",
+        "phone": "+01 12345678901",
+        "email": "demo@gmail.com"
+
+    },
+    "footer": {
+      "copy": "All Rights Reserved By",
+      "linkt": "Free Html Templates",
+      "linku": "https://html.design/"
+    }
+}

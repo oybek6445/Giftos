@@ -1,0 +1,35 @@
+{
+    "texts2": {
+        "text1": "Fast Delivery",
+        "description1": "We ensure quick and safe delivery for all orders.",
+        "text2": "Best Quality",
+        "description2": "We provide the best quality products with guaranteed satisfaction.",
+        "text3": "24/7 Support",
+        "description3": "Our support team is available 24/7 to assist you."
+    },
+    "sitetitle": "Giftos",
+    "navbar": [
+      { "name": "Home", "link": "index"},
+      { "name": "Shop", "link": "shop"},
+      { "name": "Why Us", "link": "why"},
+      { "name": "Testimonial", "link": "testimonial"},
+      { "name": "Contact Us", "link": "contact"}
+    ],
+    "texts": {
+        "aboutus": "About Us",
+        "loremtxt1": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,",
+        "newsletter": "Newsletter",
+        "needhelp": "NEED HELP",
+        "loremtxt2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,",
+        "contactus": "CONTACT US",
+        "location": " Gb road 123 london Uk",
+        "phone": "+01 12345678901",
+        "email": "demo@gmail.com"
+
+    },
+    "footer": {
+      "copy": "All Rights Reserved By",
+      "linkt": "Free Html Templates",
+      "linku": "https://html.design/"
+    }
+}

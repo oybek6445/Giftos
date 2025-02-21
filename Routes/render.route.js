@@ -1,7 +1,7 @@
 const express = require('express');
 const renderRouter = express.Router();
 
-const renderController = require("../Controller/render.controller.js");
+const renderController = require("../controller/render.controller.js");
 
 renderRouter.get("/", renderController.renderIndex);
 renderRouter.get('/index', renderController.renderIndex)
